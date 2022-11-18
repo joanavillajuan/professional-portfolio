@@ -1,0 +1,26 @@
+:root {
+    --heading-background: #76d7d2;
+}
+body {
+margin: 0;
+}
+header {
+    background-color: #313948;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    font-size: 50px;
+    color: #313948;
+    background-color: var(--heading-background);
+    width: fit-content;
+    padding: 5px 20px 5px 50px;
+}
+ li, a{
+    display: inline;
+    color: var(--heading-background);
+    font-size: 25px;
+    padding: 10px;
+   
+}
