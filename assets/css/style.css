@@ -1,6 +1,7 @@
 /* Variables */
 :root {
     --text-block: #f9cdcd;
+    -- header-font:;
 }
 /* Class Selectors */
 body {
@@ -15,6 +16,7 @@ header {
 }
 h1 {
     font-size: 50px;
+    font-family: ;
     color: #00031c;
     background-color: var(--text-block);
     width: fit-content;
@@ -32,6 +34,7 @@ main {
 h2 {
     padding-right: 50px;
     border-right: 5px solid;
+    position: relative;
     font-size: 50px;
 }
 figure {
@@ -55,7 +58,20 @@ section {
 .container, .row-container {
     border: 6px solid var(--text-block);
     margin: 10px;
+    opacity: 0.6;
+  transition: 0.3s;
+} 
+.container:hover {opacity: 1}
+.container-textbox {
+    position: absolute;
+    margin-top: -180px;
+    left: 330px;
+    padding: 0 50px 0 80px;
+    background-color: var(--text-block);
+    color: #00031c;
+    font-size: 20px;
 }
+
 .flex {
     display: flex;
     flex-direction: row;
@@ -64,14 +80,43 @@ section {
 .row-container {
     display: flex; 
 }
-/* .container-textbox {
+.row-container:hover {opacity: 1}
+.led-textbox {
     position: absolute;
-    margin-top: -10px;
-    left: 10px;
+    margin-top: 100px;
+    left: 330px;
+    padding: 0 20px 0 40px;
     background-color: var(--text-block);
     color: #00031c;
-    font-size: 30px;
-} */
+    font-size: 12px; 
+}
+.calc-textbox {
+    position: absolute;
+    margin-top: 100px;
+    right: 455px;
+    padding: 0 20px 0 40px;
+    background-color: var(--text-block);
+    color: #00031c;
+    font-size: 12px; 
+}
+.puzz-textbox {
+    position: absolute;
+    margin-top: 310px;
+    left: 330px;
+    padding: 0 20px 0 40px;
+    background-color: var(--text-block);
+    color: #00031c;
+    font-size: 12px; 
+} 
+.run-textbox {
+    position: absolute;
+    margin-top: 310px;
+    right: 490px;
+    padding: 0 20px 0 40px;
+    background-color: var(--text-block);
+    color: #00031c;
+    font-size: 12px;
+}
 .nav-bar {
    display: inline;
    color: #00031c;
