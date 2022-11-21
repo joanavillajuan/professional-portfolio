@@ -1,7 +1,7 @@
-/* Variables */
+/* CSS Variables */
 :root {
     --text-block: #f9cdcd;
-    -- header-font:;
+    --header-font: Arial, Helvetica, sans-serif;
 }
 /* Class Selectors */
 body {
@@ -13,10 +13,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: var(--header-font);
 }
 h1 {
     font-size: 50px;
-    font-family: ;
     color: #00031c;
     background-color: var(--text-block);
     width: fit-content;
@@ -29,33 +29,49 @@ header li, a{
     padding: 10px;
 }
 main {
-    margin: 100px;
+    margin: 50px;
+    font-family: var(--header-font);
 }
-h2 {
-    padding-right: 50px;
-    border-right: 5px solid;
-    position: relative;
-    font-size: 50px;
-}
+
 figure {
+    margin: 0;
+    font-family: var(--header-font);
     position: relative;
 }
-section {
-    display: flex;
-}
+
 /* class selectors */
 .text-block {
-    position: absolute;
-    margin-top: -180px;
-    right: 100px;
+    position: relative;
+    bottom: 150px;
+    left: 75%;
+    width: fit-content;
+    padding: 0 15px 0 15px ;
     background-color: var(--text-block);
     color: #00031c;
     font-size: 30px;
 }
-.content {
-   padding: 40px; 
+
+.nav-section {
+    display: flex;
 }
-.container, .row-container {
+
+.nav-section > h2{
+    width: 20%;
+    border-right: 5px solid;
+    position: relative;
+    font-size: 40px;
+}
+
+.nav-section .content {
+    padding: 40px; 
+    width: 80%
+ }
+ .container {
+    width: 955px;
+    height: 500px;
+ } 
+    
+.container , .row-container {
     border: 6px solid var(--text-block);
     margin: 10px;
     opacity: 0.6;
@@ -63,69 +79,49 @@ section {
 } 
 .container:hover {opacity: 1}
 .container-textbox {
-    position: absolute;
-    margin-top: -180px;
-    left: 330px;
-    padding: 0 50px 0 80px;
+    position: relative;
+    bottom: 140px;
+    height: 80px;
+    width: fit-content;
+    padding: 0 30px 0 60px;
     background-color: var(--text-block);
     color: #00031c;
     font-size: 20px;
 }
 
-.flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 .row-container {
-    display: flex; 
+   display: inline-flex;
+   position: relative;
+   width: 460px;
 }
-.row-container:hover {opacity: 1}
-.led-textbox {
-    position: absolute;
-    margin-top: 100px;
-    left: 330px;
-    padding: 0 20px 0 40px;
+
+.row-container:hover {opacity: 1} 
+.row-textbox {
+    position: relative;
+    top: 90px;
+    right: 465px;
+    height: 60px;
+    padding: 0 20px 0 20px;
     background-color: var(--text-block);
     color: #00031c;
-    font-size: 12px; 
+    font-size: 14px; 
 }
-.calc-textbox {
-    position: absolute;
-    margin-top: 100px;
-    right: 455px;
-    padding: 0 20px 0 40px;
-    background-color: var(--text-block);
-    color: #00031c;
-    font-size: 12px; 
+.row-textbox > h3 {
+    width: max-content;
+    line-height: 5px;
 }
-.puzz-textbox {
-    position: absolute;
-    margin-top: 310px;
-    left: 330px;
-    padding: 0 20px 0 40px;
-    background-color: var(--text-block);
-    color: #00031c;
-    font-size: 12px; 
-} 
-.run-textbox {
-    position: absolute;
-    margin-top: 310px;
-    right: 490px;
-    padding: 0 20px 0 40px;
-    background-color: var(--text-block);
-    color: #00031c;
-    font-size: 12px;
-}
+
 .nav-bar {
    display: inline;
    color: #00031c;
    font-size: 20px;
    padding-left: 30px;
-}
+} 
 
-@media (max-width: 800px) {
-    .flex {
-      flex-direction: column;
+
+/* @media screen and (max-width: 600px) {
+    body {
+        max-width: 100%;
     }
-  }
+
+  } */
