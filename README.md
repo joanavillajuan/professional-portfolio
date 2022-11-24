@@ -7,3 +7,4 @@ As a developer, I can have better chances getting employed by having a professio
 the following illustrates the web page:
 ![Alt=portfolio-webpage](assets/images/portfolio-screenshot.png)
 #### Deployment Link
+https://joanavillajuan.github.io/professional-portfolio/
